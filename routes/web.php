@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FormsController;
 use App\Http\Controllers\StudentDashboardController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [StudentDashboardController::class, 'index']);
+Route::get('/test', [TestController::class, 'index']);
 
 Route::get('/forms', [FormsController::class, 'index']);
 
