@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\FormsController;
+use App\Http\Controllers\NewAppointmentController;
+use App\Http\Controllers\StudentDashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [StudentDashboardController::class, 'index']);
+
+Route::get('/forms', [FormsController::class, 'index']);
+
+Route::post('/NewAppointment', [NewAppointmentController::class, 'store'])->name('NewAppointment.store');
