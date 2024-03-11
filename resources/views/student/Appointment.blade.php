@@ -47,14 +47,14 @@
                                     <div class="form-group">
                                         <label class="col-md-12">Full Name</label>
                                         <div class="col-md-12">
-                                            <input type="text" name="studentName" placeholder="Enter Name"
+                                            <input type="text" id ="name" name="studentName" placeholder="Enter Name"
                                                 class="form-control form-control-line">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-12">Course/Track</label>
                                         <div class="col-md-12">
-                                            <input type="text" name="courseName" class="form-control form-control-line" placeholder="Information Technology - Web Technology"></textarea>
+                                            <input id="course" type="text" name="courseName" class="form-control form-control-line" placeholder="Information Technology - Web Technology"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -68,7 +68,7 @@
                                     </div>  
                                     <div class="form-group">
                                         <label class="col-md-12">Preferred Gender of Counselor</label>
-                                            <Select name="counselGender" id="mode" type="text" class="form-control"> 
+                                            <Select name="counselGender" id="gender" type="text" class="form-control"> 
                                                 <option>Select Preferred Gender</option> 
                                                 <option value="Male">Male</option>  
                                                 <option value="Female">Female</option> 
@@ -96,13 +96,7 @@
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <input type="submit" name="addAppointment" class="btn btn-success text-white" value="Make Appointment">
-                                            <?php
-
-                                            if(isset($_GET['appointment_msg'])){
-                                                echo "<h6>".$_GET['appointment_msg']."</h6>";
-                                            }
-
-                                            ?>
+                                            
                                         </div>
                                     </div>
                                 </form>

@@ -17,10 +17,10 @@
                                 href="index.php" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
                                     class="hide-menu">Pre-Counseling Forms</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="new-appointment.php" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
+                                href="Appointment" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
                                     class="hide-menu">New Appointment</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="counselling.php" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
+                                href="counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
                                     class="hide-menu">Counseling</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="status.php" aria-expanded="false"><i class="mdi mdi-check-circle-outline"></i><span
