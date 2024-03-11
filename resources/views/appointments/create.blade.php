@@ -77,7 +77,9 @@
 <body>
     <div class="container">
         <h1 class="title">New Appointment</h1>
-        <form class="form" action="{{ route('NewAppointment.store') }}" method="post">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <form class="form" action="{{ route('appointments.store') }}" method="post">
+        @csrf
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
@@ -110,11 +112,14 @@
                 <label for="time">Select Time</label>
                 <select id="time" name="time" required>
                     <option value="">Select Time</option>
+                    <option value="8:00">8:00</option>
+                    <option value="9:00">9:00</option>
                     <option value="10:00">10:00</option>
                     <option value="11:00">11:00</option>
-                    <option value="12:00">12:00</option>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
+                    <option value="1:00">1:00</option>
+                    <option value="2:00">2:00</option>
+                    <option value="3:00">3:00</option>
+                    <option value="4:00">4:00</option>
                 </select>
             </div>
             <button type="submit" class="submit-btn">Make Appointment</button>

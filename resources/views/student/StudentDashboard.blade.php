@@ -32,7 +32,7 @@
                             <i class="fas fa-calendar-plus"></i>
                             New Appointment
                         </h5>
-                        <a href="NewAppointment" class="btn btn-primary">Go</a>
+                        <a href="Appointment" class="btn btn-primary">Go</a>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\FormsController;
-use App\Http\Controllers\NewAppointmentController;
 use App\Http\Controllers\StudentDashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,4 +19,12 @@ Route::get('/', [StudentDashboardController::class, 'index']);
 
 Route::get('/forms', [FormsController::class, 'index']);
 
-Route::post('/NewAppointment', [NewAppointmentController::class, 'store'])->name('NewAppointment.store');
+
+use App\Http\Controllers\AppointmentController;
+Route::get('/Appointment', [AppointmentController::class, 'index'])->name('Appointment.index');
+Route::post('/store', [AppointmentController::class, 'store'])->name('appointments.store');
+Route::get('/appointments/new', [AppointmentController::class, 'create'])->name('appointments.create');
+Route::get('/admin/appointments/{id}', [AppointmentController::class, 'show'])->name('appointments.show');
+
+
+
