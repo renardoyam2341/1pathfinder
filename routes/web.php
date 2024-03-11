@@ -15,5 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [AllController::class, 'Sdashboard']);
-
+Route::get('/admin', [AllController::class, 'Adashboard']);
+Route::get('/AppointmentList', [AllController::class, 'Alist']);
+Route::get('/new', [AllController::class, 'newAppointment']);
+Route::get('/counseling', [AllController::class, 'counseling']);
+Route::get('/status', [AllController::class, 'Astatus']);
+Route::get('/MHR', [AllController::class, 'MHR']);
+Route::get('/', [AllController::class, 'Sdashboard']);
+Route::post('/store', [AllController::class, 'store']);
 

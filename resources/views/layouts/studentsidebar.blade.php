@@ -17,16 +17,16 @@
                                 href="index.php" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
                                     class="hide-menu">Pre-Counseling Forms</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="Appointment" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
+                                href="/new" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
                                     class="hide-menu">New Appointment</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
+                                href="/counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
                                     class="hide-menu">Counseling</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="status.php" aria-expanded="false"><i class="mdi mdi-check-circle-outline"></i><span
+                                href="/status" aria-expanded="false"><i class="mdi mdi-check-circle-outline"></i><span
                                     class="hide-menu">Appointment Status</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="info.php" aria-expanded="false"><i class="mdi mdi-information"></i><span
+                                href="/MHR" aria-expanded="false"><i class="mdi mdi-information"></i><span
                                     class="hide-menu">Mental Health Resources</span></a></li>
                     </ul>
 

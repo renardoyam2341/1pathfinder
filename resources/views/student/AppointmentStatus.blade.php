@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 
 @include('layouts.header')
-<?php include('conn.php');?>
+
 
 <body>
 
@@ -52,28 +52,16 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php 
-                                        $query = "SELECT * FROM appointments";
-
-                                        $result = mysqli_query($conn, $query);
-
-                                        if(!$result){
-                                            die("Query Failed!".mysqli_error());
-                                        }else{
-                                            while($row = mysqli_fetch_assoc($result)){
-                                    ?>
                                     
                                     
+                                    @foreach ($appointments as $appointment)
                                         <tr>
-                                            <td><?php echo $row['studentName']; ?></td>
-                                            <td><?php echo $row['appointmentStatus']; ?></td>
-                                            <td><?php echo $row['roomName']; ?></td>
+                                            <td>{{ $appointment->name }}</td>
+                                            <td>{{ $appointment->status }}</td>
+                                            <td>{{ $appointment->room }}</td>
                                         </tr> 
-                                     
-                                            <?php
-                                        }
-                                    }
-                                ?>
+                                        @endforeach
+                                            
                                     </tbody>
                                 </table>
                             </div>

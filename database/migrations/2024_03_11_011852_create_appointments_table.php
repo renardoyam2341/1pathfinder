@@ -15,7 +15,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('mode');
             $table->string('gender');
             $table->date('date');
-            $table->time('time');
+            $table->time('time');     
             $table->timestamps();
         });
     }
@@ -24,4 +24,5 @@ class CreateAppointmentsTable extends Migration
     {
         Schema::dropIfExists('appointments');
     }
+    
 }

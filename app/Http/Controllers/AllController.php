@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 
 class AllController extends Controller
@@ -9,12 +9,16 @@ class AllController extends Controller
     
     public function Adashboard()
     {
-        return view('student.MHR');
+        $data = Appointment::all();
+    
+        return view('admin.AdminDashboard', ['appointments' => $data]);
     }
-    public function Alist()
-    {
-        return view('student.MHR');
-    }
+    public function AList()
+{
+    $data = Appointment::all();
+
+    return view('admin.AppointmentList', ['appointments' => $data]);
+}
     public function create()
     {
         return view('student.MHR');
@@ -26,24 +30,40 @@ class AllController extends Controller
     }
     public function forms()
     {
-        return view('student.MHR');
+        return view('student.forms');
     }
-    public function newAppoinment()
+    public function newAppointment()
     {
-        return view('student.MHR');
+        return view('student.Appointment');
     }
     public function counseling()
     {
-        return view('student.MHR');
+        return view('student.counseling');
     }
     public function Astatus()
     {
-        return view('student.MHR');
+        $data = Appointment::all();
+    
+        return view('student.AppointmentStatus', ['appointments' => $data]);
     }
     
     public function MHR()
     {
         return view('student.MHR');
     }
-    
+    public function store(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'course' => 'required|string|max:255',
+            'mode' => 'required|string|max:255',
+            'gender' => 'required|string|max:255',
+            'date' => 'required|date',
+            'time' => 'required|string|max:255',
+        ]);
+
+        Appointment::create($validatedData);
+
+        return redirect('/')->with('success', 'Appointment created successfully.');
+    }
 }

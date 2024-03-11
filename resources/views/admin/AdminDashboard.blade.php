@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 
 @include('layouts.header')
-<?php include('conn.php');?>
+
 
 <body>
     <!-- Preloader - style in spinners.css -->
@@ -35,7 +35,11 @@
                     </div>
                 </div>
             </div>
-
+<style>
+    .hori{font-size: 200%}
+    .vert{font-size: 200%}
+    i,a{font-size: 100%}
+</style>
             <div class="container-fluid">
 
                 <div class="row">
@@ -45,46 +49,54 @@
                         <table id="example" class="table table-dark">
                                     <thead">
                                         <tr>
-                                            <th scope="col">Student Name</th>
-                                            <th scope="col">Course/Track</th>
-                                            <th scope="col">Preferred Mode of Counsel</th>
-                                            <th scope="col">Preferred Gender of Counselor</th>
-                                            <th scope="col">Appointment Date</th>
-                                            <th scope="col">Appointment Time</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Room Name</th>
-                                            <th scope="col">Update Appointment</th>
+                                        <th scope="col" class="hori">
+                        Name
+                    </th>
+                    <th scope="col" class="hori">
+                        Course/Track
+                    </th>
+                    <th scope="col" class="hori">
+                        Mode of Counsel
+                    </th>
+                    <th scope="col" class="hori">
+                        Preferred Counselor Gender
+                    </th>
+                    <th scope="col" class="hori">
+                        Appointment Date
+                    </th>
+                    <th scope="col" class="hori">
+                        Time
+                    </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php 
-                                        $query = "SELECT * FROM appointments";
-
-                                        $result = mysqli_query($conn, $query);
-
-                                        if(!$result){
-                                            die("Query Failed!".mysqli_error());
-                                        }else{
-                                            while($row = mysqli_fetch_assoc($result)){
-                                    ?>
+                                    @foreach ($appointments as $appointment)
+                <tr class="bg-gray-100 border-b">
+                    <td class="vert">
+                        {{ $appointment->name }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->course }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->mode }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->gender }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->date }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->time }}
+                    </td>
+                </tr>
+                @endforeach
                                     
                                     
-                                        <tr>
-                                            <td><?php echo $row['studentName']; ?></td>
-                                            <td><?php echo $row['courseName']; ?></td>
-                                            <td><?php echo $row['counselMode']; ?></td>
-                                            <td><?php echo $row['counselGender']; ?></td>
-                                            <td><?php echo $row['appointmentDate']; ?></td>
-                                            <td><?php echo $row['appointmentTime']; ?></td>
-                                            <td><?php echo $row['appointmentStatus']; ?></td>
-                                            <td><?php echo $row['roomName']; ?></td>
-                                            <td><a href="statusupdate.php?id=<?php echo $row['id']?>" class="btn btn-light">Update</a></td>
-                                        </tr> 
+                                        
                                      
-                                            <?php
-                                        }
-                                    }
-                                ?>
+                                            <
                                     </tbody>
                                 </table>
                             </div>
