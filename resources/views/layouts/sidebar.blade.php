@@ -25,7 +25,6 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- User Profile-->
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/admin" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
                                     class="hide-menu">Appointment Reservations</span></a></li>

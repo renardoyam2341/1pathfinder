@@ -38,28 +38,28 @@
             </div>
 
             <div class="container-fluid d-flex justify-content-evenly">
-
-                <div class="card text-white bg-dark" style="width: 18rem; border-radius:20px;">
-                    <img class="card-img-top" src="https://i.ibb.co/Bw1mX4V/transparent-interview-icon-video-conference-icon-606fd33004b335-8145544116179412960193.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Video Counseling</h5>
-                      <a href="receiver.php" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Join Video Conference Room</a>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 18rem; border-radius:20px;">
+                            <img class="card-img-top" src="https://i.ibb.co/Bw1mX4V/transparent-interview-icon-video-conference-icon-606fd33004b335-8145544116179412960193.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Video Counseling</h5>
+                              <a href="receiver.php" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Join Video Conference Room</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 18rem; border-radius:20px;">
+                            <img class="card-img-top mb-5" src="https://i.ibb.co/7kz9gwR/keyboard-hands-clipart-md.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Chat Counseling</h5>
+                              <a href="http://localhost:5500/" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Start Chat Room</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card text-white bg-dark" style="width: 18rem; border-radius:20px;">
-                    <img class="card-img-top mb-5" src="https://i.ibb.co/7kz9gwR/keyboard-hands-clipart-md.png" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Chat Counseling</h5>
-                      <a href="http://localhost:5500/" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Start Chat Room</a>
-                    </div>
-                </div>
-
-                </div>
-
             </div>
-
-    </div>
+        </div>
 
     @include('layouts.footer')  
 </html>
