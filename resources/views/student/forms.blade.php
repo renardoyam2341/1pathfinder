@@ -61,7 +61,7 @@
                             </div>
                          </div>
 
-                        <a href="/student/forms"><button type="button" class="btn btn-dark mb-4" style="border-radius:20px;">Get Started!</button></a>
+                        <a href="/student/newappointment"><button type="button" class="btn btn-dark mb-4" style="border-radius:20px;">Get Started!</button></a>
 
                     </div>
                 </div>        

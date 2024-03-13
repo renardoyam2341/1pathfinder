@@ -67,6 +67,12 @@
                     <th scope="col" class="hori">
                         Time
                     </th>
+                    <th scope="col" class="hori">
+                        Status
+                    </th>
+                    <th scope="col" class="hori">
+                        Room
+                    </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -90,7 +96,21 @@
                     <td class="vert">
                         {{ $appointment->time }}
                     </td>
+                    <td class="vert">
+                    <select id="status" name="status" required>
+                    <option value="7:30">{{ $appointment->status }}</option>
+                    <option value="8:30">Waiting</option>
+                    <option value="9:30">Ready</option>
+                    </select>
+                    </td>
+                    <td class="vert">
+                    <select id="status" name="status" required>
+                    <option value="7:30">{{ $appointment->room }}</option>
+                    <option value="8:30">Chatroom 1</option>
+                    <option value="9:30">Video Chatroom 1</option>
+                    </td>
                 </tr>
+                
                 @endforeach
                                     
                                     
@@ -98,12 +118,13 @@
                                      
                                             <
                                     </tbody>
+                                    
                                 </table>
+                                <button type="submit" class="submit-btn" >Edit Appointment</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>

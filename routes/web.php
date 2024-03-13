@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/student', [AllController::class, 'Sdashboard']);
+Route::get('/', [AllController::class, 'Sdashboard']);
 Route::get('/admin', [AllController::class, 'Adashboard']);
 Route::get('/AppointmentList', [AllController::class, 'Alist']);
 Route::get('/student/newappointment', [AllController::class, 'newAppointment']);
@@ -25,4 +25,5 @@ Route::get('/student/status', [AllController::class, 'Sstatus']);
 Route::get('/student/MHR', [AllController::class, 'MHR']);
 Route::post('/store', [AllController::class, 'store']);
 Route::get('/student/forms', [AllController::class, 'forms']);
+Route::put('/update', [AllController::class, 'update']);
 
