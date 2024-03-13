@@ -16,7 +16,7 @@
         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
 
         @include('layouts.topbar')
-        @include('layouts.sidebar')
+        @include('layouts.studentsidebar')
 
         <div class="page-wrapper">
 
