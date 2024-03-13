@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
-<?php include 'includes/header.php'?>
-
-
-<?php include 'includes/footer.php'?>
+@include('layouts.header')
 
 </body>
 
@@ -18,8 +15,8 @@
     <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
         data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
 
-        <?php include 'includes/topbar.php'?>
-        <?php include 'includes/sidebar.php'?>
+        @include('layouts.topbar')
+        @include('layouts.sidebar')
 
         <div class="page-wrapper">
 
@@ -67,5 +64,5 @@
 
     </div>
 
-    <?php include 'includes/footer.php'?>  
+    @include('layouts.footer')  
 </html>
