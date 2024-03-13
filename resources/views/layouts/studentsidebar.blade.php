@@ -10,9 +10,9 @@
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/student" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
-                                    class="hide-menu">Pre-Counseling Forms</span></a></li>
+                                    class="hide-menu">Dashboard</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/new" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
+                                href="/forms" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
                                     class="hide-menu">New Appointment</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span

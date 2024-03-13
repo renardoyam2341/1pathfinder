@@ -24,4 +24,5 @@ Route::get('/status', [AllController::class, 'Astatus']);
 Route::get('/studentstatus', [AllController::class, 'Sstatus']);
 Route::get('/MHR', [AllController::class, 'MHR']);
 Route::post('/store', [AllController::class, 'store']);
+Route::get('/forms', [AllController::class, 'forms']);
 
