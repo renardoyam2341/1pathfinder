@@ -30,7 +30,7 @@
                                 href="/admin" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
                                     class="hide-menu">Appointment Reservations</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="admincounseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
+                                href="admin/counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
                                     class="hide-menu">Counseling</span></a></li>
                     </ul>
 
