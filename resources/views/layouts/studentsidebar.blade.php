@@ -8,11 +8,6 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <!-- User Profile-->
-                        <li>
-                            <!-- User Profile-->
-                            <!-- End User Profile-->
-                        </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/student" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
                                     class="hide-menu">Pre-Counseling Forms</span></a></li>

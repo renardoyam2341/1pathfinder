@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="row"><h1>Before we get started, please complete these required pre-counseling forms.</h1></div>
         <div class="row">
             <div class="col-12">
                 <h1 class="text-center">Form Completion</h1>

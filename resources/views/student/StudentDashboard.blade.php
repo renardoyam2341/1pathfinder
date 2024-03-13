@@ -19,7 +19,7 @@
         @include('layouts.studentsidebar')
 
         <div class="page-wrapper">
-
+            
             <div class="page-breadcrumb">
                 <div class="row align-items-center">
                     <div class="col-5">
@@ -36,29 +36,37 @@
                 </div>
             </div>
 
-            <div class="container-fluid d-flex justify-content-evenly">
+            <div class="alert alert-dark" role="alert">Before you get started, please first accomplish these pre-counselling forms.</div>
 
-                <div class="card text-white bg-dark mb-3" style="width: 18rem; border-radius:20px;">
-                    <img class="card-img-top" src="https://i.ibb.co/Lt8NNQr/Pngtree-man-listen-to-hidden-information-8785847.png" alt="Card image">
-                    <div class="card-body">
-                      <h5 class="card-title">Counseling Informed Consent Form</h5>
-                      <p class="card-text">Counseling is a confidential process aimed at empowering individuals to navigate their lives, but it involves sharing personal information, ensuring confidentiality with exceptions such as potential harm reporting, and maintaining data privacy in online interactions, allowing the transfer of information to a new counselor if desired.</p>
-                      <a href="https://forms.office.com/pages/responsepage.aspx?id=xOcVpfeMl0-yO5ZJFkX38J0LtyD20adMg7bAnvMjPUxUMUpUQUFONU5XVk5XR09MVjMzOEhGWDI1Vi4u" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Complete Form</a>
+            <div class="container d-flex justify-content-center align-items-center text-center">
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="card text-white bg-dark mb-3 align-items-center" style="width: 20vw; border-radius:20px;">
+                            <img class="card-img-top img-fluid" style="width:200px; height:200px;" src="https://i.ibb.co/Lt8NNQr/Pngtree-man-listen-to-hidden-information-8785847.png" alt="Card image">
+                            <div class="card-body">
+                              <h5 class="card-title">Counseling Informed Consent Form</h5>
+                              <a href="https://forms.office.com/pages/responsepage.aspx?id=xOcVpfeMl0-yO5ZJFkX38J0LtyD20adMg7bAnvMjPUxUMUpUQUFONU5XVk5XR09MVjMzOEhGWDI1Vi4u" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Complete Form</a>
+                            </div>
+                         </div>
+                         
+                         <div class="card text-white bg-dark mb-3 align-items-center" style="width: 20vw; border-radius:20px;">
+                            <img class="card-img-top img-fluid" style="width:200px; height:200px;" src="https://i.ibb.co/n0bh9VZ/Lovepik-com-450070359-counselling-in-flat-illustration-vector.png" alt="Card image">
+                            <div class="card-body">
+                              <h5 class="card-title">Counseling Intake Form</h5>
+                              <a href="https://forms.office.com/pages/responsepage.aspx?id=xOcVpfeMl0-yO5ZJFkX38J0LtyD20adMg7bAnvMjPUxUMEs1VE5BSEExQ1JZODAxMVAwUDlaR1U0Ry4u" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Complete Form</a>
+                            </div>
+                         </div>
+
+                        <a href="/new"><button type="button" class="btn btn-dark mb-4" style="border-radius:20px;">Get Started!</button></a>
+
                     </div>
-                 </div>
-
-                 <div class="card text-white bg-dark mb-3" style="width: 18rem; border-radius:20px;">
-                    <img class="card-img-top" src="https://i.ibb.co/n0bh9VZ/Lovepik-com-450070359-counselling-in-flat-illustration-vector.png" alt="Card image">
-                    <div class="card-body">
-                      <h5 class="card-title">Counseling Intake Form</h5>
-                      <p class="card-text mb-2 p-1">The information provided on this form will substantially assist us to better understand your situation as well as to come up with potential interventions in helping you get empowered. Please note, this information is strictly confidential – exclusively for our use, will not be released to anyone without your written permission, and will be stored in a secured location.</p>
-                      <a href="https://forms.office.com/pages/responsepage.aspx?id=xOcVpfeMl0-yO5ZJFkX38J0LtyD20adMg7bAnvMjPUxUMEs1VE5BSEExQ1JZODAxMVAwUDlaR1U0Ry4u" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Complete Form</a>
-                    </div>
-                 </div>
-
+                </div>        
             </div>
+        </div>
 
-    </div>
+</div>
 
     @include('layouts.footer')  
 </html>
