@@ -102,4 +102,8 @@ class AllController extends Controller
 
     return response()->json(['message' => 'Appointment updated successfully']);
 }
+
+    public function createroom(){
+        return view('admin.roomcreate');
+    }
 }
