@@ -23,12 +23,12 @@
             <div class="page-breadcrumb">
                 <div class="row align-items-center">
                     <div class="col-5">
-                        <h4 class="page-title"><i class="mdi mdi-alarm-check"></i>Counseling</h4>
+                        <h4 class="page-title"><i class="mdi mdi-alarm-check"></i>Dashboard</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Counsel Modes</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                                 </ol>
                             </nav>
                         </div>
@@ -36,32 +36,74 @@
                 </div>
             </div>
 
-            <div class="container d-flex justify-content-around align-items-center text-center">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
-                        <div class="card text-white bg-dark" style="width: 25rem; height:32rem; border-radius:20px;">
-                            <img class="card-img-top" style="width:400px; height:400px;" src="https://i.ibb.co/Bw1mX4V/transparent-interview-icon-video-conference-icon-606fd33004b335-8145544116179412960193.png" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Video Counseling</h5>
-                              <a href="receiver.php" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Create Video Conference Room</a>
-                            </div>
-                        </div>
+                  <div class="col-md-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Page Views</h5>
+                        <p class="card-text">32</p>
+                      </div>
                     </div>
-
-                    <div class="col">
-                        <div class="card text-white bg-dark" style="width: 25rem; height:32rem; border-radius:20px;">
-                            <img class="card-img-top" style="width:400px; height:400px;" src="https://i.ibb.co/7kz9gwR/keyboard-hands-clipart-md.png" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Chat Counseling</h5>
-                              <a href="http://localhost:5500/" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Start Chat Room</a>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Unique Visitors</h5>
+                        <p class="card-text">2</p>
+                      </div>
                     </div>
-
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Appointments Made</h5>
+                        <p class="card-text">1</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title">Appointment Statistics</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Anxiety: 1
+                        </li>
+                        <li class="list-group-item">
+                          Depression: 0
+                        </li>
+                        <li class="list-group-item">
+                          Stress 0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5 class="card-title">Preferred Mode Of Counseling</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Videochat: 1
+                        </li>
+                        <li class="list-group-item">
+                          Chat: 0
+                        </li>
+                        <li class="list-group-item">
+                          Offline: 0
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            </div>
+        </div>
 
     </div>
 
