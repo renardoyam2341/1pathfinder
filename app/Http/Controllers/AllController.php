@@ -106,4 +106,8 @@ class AllController extends Controller
     public function createroom(){
         return view('admin.roomcreate');
     }
+
+    public function adminD(){
+        return view('admin.dashboardA');
+    }
 }
