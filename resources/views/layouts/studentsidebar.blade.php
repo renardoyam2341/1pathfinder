@@ -14,7 +14,7 @@
                             <!-- End User Profile-->
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="index.php" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
+                                href="/student" aria-expanded="false"><i class="mdi mdi-account-card-details"></i><span
                                     class="hide-menu">Pre-Counseling Forms</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/new" aria-expanded="false"><i class="mdi mdi-alarm-check"></i><span
@@ -23,7 +23,7 @@
                                 href="/counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
                                     class="hide-menu">Counseling</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/status" aria-expanded="false"><i class="mdi mdi-check-circle-outline"></i><span
+                                href="/studentstatus" aria-expanded="false"><i class="mdi mdi-check-circle-outline"></i><span
                                     class="hide-menu">Appointment Status</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="/MHR" aria-expanded="false"><i class="mdi mdi-information"></i><span

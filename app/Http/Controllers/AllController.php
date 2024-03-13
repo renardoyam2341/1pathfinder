@@ -40,7 +40,15 @@ class AllController extends Controller
     {
         return view('student.counseling');
     }
+
     public function Astatus()
+    {
+        $data = Appointment::all();
+    
+        return view('student.AppointmentStatus', ['appointments' => $data]);
+    }
+
+    public function Sstatus()
     {
         $data = Appointment::all();
     
