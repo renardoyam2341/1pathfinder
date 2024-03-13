@@ -36,7 +36,9 @@
                 </div>
             </div>
 
-            <div class="alert alert-dark" role="alert">Before you get started, please first accomplish these pre-counselling forms.</div>
+            <div class="alert alert-dark alert-warning alert-dismissible fade show" role="alert">
+                Before you get started, please first accomplish these pre-counselling forms.
+            </div>
 
             <div class="container d-flex justify-content-center align-items-center text-center">
 
@@ -59,7 +61,7 @@
                             </div>
                          </div>
 
-                        <a href="/new"><button type="button" class="btn btn-dark mb-4" style="border-radius:20px;">Get Started!</button></a>
+                        <a href="/student/forms"><button type="button" class="btn btn-dark mb-4" style="border-radius:20px;">Get Started!</button></a>
 
                     </div>
                 </div>        

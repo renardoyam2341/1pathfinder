@@ -41,7 +41,7 @@
                           </h1>
                           <h4>PathFinder is an application designed to help you seamlessly connect with our counselors.
                           </h4>
-                          <a href="/new"><button type="button" class="btn btn-light mt-4 mb-4" style="border-radius:20px;"><b>Make Appointment</b></button></a>
+                          <a href="/student/forms"><button type="button" class="btn btn-light mt-4 mb-4" style="border-radius:20px;"><b>Make Appointment</b></button></a>
                         </div>
                       </div>
                     </div>
