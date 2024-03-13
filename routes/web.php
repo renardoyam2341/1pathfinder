@@ -19,6 +19,7 @@ Route::get('/admin', [AllController::class, 'Adashboard']);
 Route::get('/AppointmentList', [AllController::class, 'Alist']);
 Route::get('/new', [AllController::class, 'newAppointment']);
 Route::get('/counseling', [AllController::class, 'counseling']);
+Route::get('/admincounseling', [AllController::class, 'Acounseling']);
 Route::get('/status', [AllController::class, 'Astatus']);
 Route::get('/studentstatus', [AllController::class, 'Sstatus']);
 Route::get('/MHR', [AllController::class, 'MHR']);

@@ -27,10 +27,10 @@
                         </li>
                         <!-- User Profile-->
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="index.php" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
+                                href="/admin" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
                                     class="hide-menu">Appointment Reservations</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="counselling.php" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
+                                href="admincounseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span
                                     class="hide-menu">Counseling</span></a></li>
                     </ul>
 

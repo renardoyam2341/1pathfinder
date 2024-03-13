@@ -41,6 +41,11 @@ class AllController extends Controller
         return view('student.counseling');
     }
 
+    public function Acounseling()
+    {
+        return view('admin.counseling');
+    }
+
     public function Astatus()
     {
         $data = Appointment::all();
