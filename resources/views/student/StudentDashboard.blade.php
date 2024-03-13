@@ -3,7 +3,6 @@
 
 @include('layouts.header') 
 
-</body>
     <!-- Preloader - style in spinners.css -->
     <div class="preloader">
         <div class="lds-ripple">
@@ -18,7 +17,7 @@
         @include('layouts.topbar')
         @include('layouts.studentsidebar')
 
-        <div class="page-wrapper vh-100 overflow-auto">
+        <div class="page-wrapper mh-100 overflow-auto">
 
             <div class="page-breadcrumb">
                 <div class="row align-items-center">
@@ -47,7 +46,7 @@
                     </div>
                     <div class="col-md-6 col-12">
                       <img
-                        src="assets\images\counselinganimation.gif"
+                        src="\assets\images\counselinganimation.gif"
                         alt="PathFinder Logo"
                         class="img-fluid"
                         style="border-radius: 20px;"

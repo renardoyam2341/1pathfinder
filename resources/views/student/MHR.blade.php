@@ -36,33 +36,51 @@
                 </div>
             </div>
 
-            <div class="container-fluid d-flex justify-content-evenly">
+            <hr>
 
-                <div class="card text-white bg-dark mb-3" style="max-width: 20rem; border-radius:20px; max-height:25rem">
-                    <img class="card-img-top img-fluid mx-auto pt-3" style="height:70%; width:70%;" src="https://mindnation.com/images/logo/mindnation-logo.png" alt="Card image">
-                    <div class="card-body">
-                      <h5 class="card-title">MindNation</h5>
-                      <p class="card-text">In need of someone to talk to? try using MindNation's support chat in their Facebook page!</p>
-                      <a href="https://www.facebook.com/mindnation/" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Go</a>
-                    </div>
-                 </div>
+            <section id="welcome" class="flex-grow-1">
 
-                <div class="card text-white bg-dark d-flex" style="max-width: 20rem; border-radius:20px; max-height:50rem">
-                    <img class="card-img-top img-fluid mx-auto pt-3" style="height:70%; width:70%; border-radius:40px;" src="https://in-touch.org/wp-content/uploads/2023/02/cropped-intouchlogo1-2.png" alt="Card image">
-                    <div class="card-body">
-                      <h5 class="card-title">In Touch Community</h5>
-                      <p class="card-text">In Touch Community’s Crisis Line Landline: +63 2 8893 1893
-                                    <br>Globe: 0917-863-1136
-                                    <br>Sun: 0956-053-4257
-                                    <br>Email address: intouch@in-touch.org
-                                    <br>www.in-touch.org</p>
-                      <a href="www.in-touch.org" class="btn btn-light d-flex justify-content-center" style="border-radius:10px;">Go</a>
+                <div id="welcomeMessage" class="container">
+                  <div class="row text-light bg-secondary px-5 py-5" style="border-radius:30px;">
+                    <div class="col text-center">
+                      <div class="d-flex align-items-center h-100">
+                        <div>
+                          <h1 class="display-5" style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+                            Check out these Mental Health Resources provided by the Department of Health!
+                          </h1>
+                          <h4>source: facebook.com/DOHhealthypilipinas
+                          </h4>
+                          <hr>
+                          <p><a href="https://bit.ly/DOHselfcarevol1?fbclid=IwAR2W2MX5U54wE8JkuJPvjblrD-v6yXXXq6jurQp4dl40DPSUnzSkGoMghK0" class="link-light">
+                            <b>Self-Care Kit Volume 1</b>
+                          </a></p>
+                          <p><a href="https://bit.ly/DOHselfcarevol2?fbclid=IwAR1YNsb3IyFEjO5McLyG1yl1DYSzpQKQPjk8jE3iOIl_ALRd3QuOMUqX5sM" class="link-light">
+                            <b>Self-Care Kit Volume 2</b>
+                          </a></p>
+                          <p><a href="https://bit.ly/DOHmhbookletENG?fbclid=IwAR1wlrHB8ew2ILsX7sLPzaZQJuUKuyj7HOsEsC0KUujMhJOVI-aBYM0OaOQ" class="link-light">
+                            <b>Mental Health, Mind, and Body Booklet English Ver.</b>
+                          </a></p>
+                          <p><a href="https://bit.ly/DOHmhbookletFIL?fbclid=IwAR1I3IFtTOHB5F3BXqnMysB3e83OZqzsGVV_tDMMzW2Jc1FkZUxuDz661d0" class="link-light">
+                            <b>Mental Health, Mind, and Body Booklet Filipino Ver.</b>
+                          </a></p>
+                          <p><a href="https://bit.ly/DOHmhbookletBIS?fbclid=IwAR36RHqkKE24JEtdQFnuZdpSXL0lMxal5SfSICdzTfQVsiMcOUcx4KpZSg8" class="link-light">
+                            <b>Mental Health, Mind, and Body Booklet Bisaya Ver.</b>
+                          </a></p>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col">
+                      <img
+                        src="\assets\images\mhr.gif"
+                        alt="Mental Health GIF"
+                        class="img-fluid"
+                        style="border-radius: 20px;"
+                      />
+                    </div>
+                  </div>
                 </div>
 
-            </div>
-
-    </div>
+        </div>
 
     @include('layouts.footer')  
 </html>
