@@ -59,7 +59,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Appointments Made</h5>
                         <p class="card-text">
-                        
+                        {{$count}}
                         </p>
                       </div>
                     </div>
@@ -91,13 +91,13 @@
                       </div>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                          Videochat: 1
+                          Video Call: {{$vd}}
                         </li>
                         <li class="list-group-item">
-                          Chat: 0
+                          Chat: {{$chat}}
                         </li>
                         <li class="list-group-item">
-                          Offline: 0
+                          Face-to-Face: {{$f2f}}
                         </li>
                       </ul>
                     </div>

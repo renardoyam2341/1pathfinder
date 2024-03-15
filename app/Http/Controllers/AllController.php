@@ -10,11 +10,28 @@ class AllController extends Controller
 {
     
     public function Adashboard()
-    {
-        
-        
-        return view('admin.dashboardA');
-    }
+{
+    $count = DB::table('appointments')->count();
+    $vd = DB::table('appointments')
+        ->where('mode', 'Video Call')
+        ->selectRaw('count(id) as vd')
+        ->pluck('vd')
+        ->first();
+
+    $chat = DB::table('appointments')
+        ->where('mode', 'Chat')
+        ->selectRaw('count(id) as chat')
+        ->pluck('chat')
+        ->first();
+
+    $f2f = DB::table('appointments')
+        ->where('mode', 'Face-to-Face')
+        ->selectRaw('count(id) as f2f')
+        ->pluck('f2f')
+        ->first();
+
+    return view('admin.dashboardA', compact('count', 'vd', 'chat', 'f2f'));
+}
     public function AList()
     {
     $data = array("appointments" => DB::table('appointments')->orderBy
