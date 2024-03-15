@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class AllController extends Controller
 {
@@ -15,9 +17,11 @@ class AllController extends Controller
     }
     public function AList()
     {
-    $data = Appointment::all();
+    $data = array("appointments" => DB::table('appointments')->orderBy
+    ('created_at','desc')->paginate(5));
 
-    return view('admin.AdminDashboard', ['appointments' => $data]);
+
+    return view('admin.AdminDashboard', $data);
     }
     public function create()
     {

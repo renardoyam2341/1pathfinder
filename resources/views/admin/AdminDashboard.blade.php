@@ -39,6 +39,7 @@
     .hori{font-size: 150%}
     .vert{font-size: 150%}
     i,a{font-size: 100%}
+    div.page{}
 </style>
             <div class="container-fluid">
 
@@ -144,6 +145,10 @@
                                     </tbody>
                                     
                                 </table>
+                                <div class="page">
+                                    {{$appointments->links()}}
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
