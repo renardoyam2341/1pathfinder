@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+
 class AllController extends Controller
 {
     
@@ -11,13 +11,13 @@ class AllController extends Controller
     {
         $data = Appointment::all();
     
-        return view('admin.AdminDashboard', ['appointments' => $data]);
+        return view('admin.dashboardA', ['appointments' => $data]);
     }
     public function AList()
     {
     $data = Appointment::all();
 
-    return view('admin.AppointmentList', ['appointments' => $data]);
+    return view('admin.AdminDashboard', ['appointments' => $data]);
     }
     public function create()
     {
@@ -79,29 +79,17 @@ class AllController extends Controller
 
         return redirect('/')->with('success', 'Appointment created successfully.');
     }
-    public function update(Request $request)
-{
-    $appointmentData = $request->all();
-
-    $validator = Validator::make($appointmentData, [
-        'date' => 'required|date',
-        'time' => 'required',
-    ]);
-
-    if ($validator->fails()) {
-        return response()->json(['error' => $validator->errors()], 400);
-    }
-
-    $appointment = Appointment::find($request->id);
-
-    if (!$appointment) {
-        return response()->json(['error' => 'Appointment not found'], 404);
-    }
-
-    $appointment->update($appointmentData);
-
-    return response()->json(['message' => 'Appointment updated successfully']);
-}
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+          'status' => 'required|max:255',
+          'room' => 'required',
+        ]);
+        $appointment = Appointment::find($id);
+        $appointment->update($request->all());
+        return redirect()->route('AppointmentList.index')
+          ->with('success', 'Appointments updated successfully.');
+      }
 
     public function createroom(){
         return view('admin.roomcreate');

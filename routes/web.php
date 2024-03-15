@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AllController::class, 'Sdashboard']);
 Route::get('/admin', [AllController::class, 'Adashboard']);
-Route::get('/AppointmentList', [AllController::class, 'Alist']);
+Route::get('/AppointmentList', [AllController::class, 'Alist'])->name('AppointmentList.index');
 Route::get('/student/newappointment', [AllController::class, 'newAppointment']);
 Route::get('/student/counseling', [AllController::class, 'counseling']);
 Route::get('/admin/counseling', [AllController::class, 'Acounseling']);
@@ -25,7 +25,7 @@ Route::get('/student/status', [AllController::class, 'Sstatus']);
 Route::get('/student/MHR', [AllController::class, 'MHR']);
 Route::post('/store', [AllController::class, 'store']);
 Route::get('/student/forms', [AllController::class, 'forms']);
-Route::put('/update', [AllController::class, 'update']);
+Route::put('/update/{id}', [AllController::class, 'update'])->name('appointments.update');
 Route::get('/admin/roomcreate', [AllController::class, 'createroom']);
 Route::get('/admin/dashboard', [AllController::class, 'adminD']);
 

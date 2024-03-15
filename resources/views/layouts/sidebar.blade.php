@@ -26,10 +26,10 @@
                             </div>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/admin/dashboard" aria-expanded="false"><i class="mdi mdi-information"></i><span
+                                href="/admin" aria-expanded="false"><i class="mdi mdi-information"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="/admin" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
+                                href="/AppointmentList" aria-expanded="false"><i class="mdi mdi-calendar-multiple-check"></i><span
                                     class="hide-menu">Appointment Reservations</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="admin/counseling" aria-expanded="false"><i class="mdi mdi-account-switch"></i><span

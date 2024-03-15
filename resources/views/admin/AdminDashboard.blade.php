@@ -36,8 +36,8 @@
                 </div>
             </div>
 <style>
-    .hori{font-size: 200%}
-    .vert{font-size: 200%}
+    .hori{font-size: 150%}
+    .vert{font-size: 150%}
     i,a{font-size: 100%}
 </style>
             <div class="container-fluid">
@@ -73,6 +73,15 @@
                     <th scope="col" class="hori">
                         Room
                     </th>
+                    <th scope="col" class="hori">
+
+                    </th>
+                    <th scope="col" class="hori">
+                        Created
+                    </th>
+                    <th scope="col" class="hori">
+                        Updated
+                    </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -96,19 +105,34 @@
                     <td class="vert">
                         {{ $appointment->time }}
                     </td>
+                    
+                    <form action="{{ route('appointments.update', $appointment->id) }}" method="post">
+                    @csrf
+                    @method('PUT')
                     <td class="vert">
                     <select id="status" name="status" required>
-                    <option value="7:30">{{ $appointment->status }}</option>
-                    <option value="8:30">Waiting</option>
-                    <option value="9:30">Ready</option>
+                    <option value="Pending" {{ $appointment->status == 'Pending' ? 'selected' : ''}}>Pending</option>
+                    <option value="Waiting" {{ $appointment->status == 'Waiting' ? 'selected' : ''}}>Waiting</option>
+                    <option value="Ready" {{ $appointment->status == 'Ready' ? 'selected' : ''}}>Ready</option>
+                    <option value="Done" {{ $appointment->status == 'Done' ? 'selected' : ''}}>Done</option>
                     </select>
+                    
+                    <td class="vert">
+                    <input type="text" id="room" name="room"
+                    value="{{ $appointment->room }}">
                     </td>
                     <td class="vert">
-                    <select id="status" name="status" required>
-                    <option value="7:30">{{ $appointment->room }}</option>
-                    <option value="8:30">Chatroom 1</option>
-                    <option value="9:30">Video Chatroom 1</option>
+                    <button type="submit" class="btn mt-3 btn-primary">Edit Appointments</button>
                     </td>
+                    <td class="vert">
+                        {{ $appointment->created_at }}
+                    </td>
+                    <td class="vert">
+                        {{ $appointment->updated_at }}
+                    </td>
+                    
+                    </form>
+                    
                 </tr>
                 
                 @endforeach
@@ -120,7 +144,6 @@
                                     </tbody>
                                     
                                 </table>
-                                <button type="submit" class="submit-btn" >Edit Appointment</button>
                             </div>
                         </div>
                     </div>
