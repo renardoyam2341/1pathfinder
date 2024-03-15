@@ -128,8 +128,9 @@
                 <label for="mode">Preferred Mode of Counsel</label>
                 <select id="mode" name="mode" required>
                     <option value="">Select Mode</option>
-                    <option value="online">Online</option>
-                    <option value="offline">Offline</option>
+                    <option value="Video Call">Video Call</option>
+                    <option value="Chat">Chat</option>
+                    <option value="Face-to-Face">Face-to-Face</option>
                 </select>
             </div>
             <div class="form-group">

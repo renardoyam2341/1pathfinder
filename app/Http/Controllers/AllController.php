@@ -11,9 +11,9 @@ class AllController extends Controller
     
     public function Adashboard()
     {
-        $data = Appointment::all();
-    
-        return view('admin.dashboardA', ['appointments' => $data]);
+        
+        
+        return view('admin.dashboardA');
     }
     public function AList()
     {
