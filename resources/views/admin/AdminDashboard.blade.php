@@ -35,15 +35,9 @@
                     </div>
                 </div>
             </div>
-<style>
-    .hori{font-size: 150%}
-    .vert{font-size: 150%}
-    i,a{font-size: 100%}
-    div.page{}
-</style>
-            <div class="container-fluid">
+            <div class="container-fluid ">
 
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-12">
                         <div class="card">
                             <div class="table-responsive">
@@ -75,13 +69,13 @@
                         Room
                     </th>
                     <th scope="col" class="hori">
-
-                    </th>
-                    <th scope="col" class="hori">
                         Created
                     </th>
                     <th scope="col" class="hori">
                         Updated
+                    </th>
+                    <th scope="col" class="hori">
+
                     </th>
                                         </tr>
                                     </thead>
@@ -123,14 +117,14 @@
                     value="{{ $appointment->room }}">
                     </td>
                     <td class="vert">
-                    <button type="submit" class="btn mt-3 btn-primary">Edit Appointments</button>
-                    </td>
-                    <td class="vert">
                         {{ $appointment->created_at }}
                     </td>
                     <td class="vert">
                         {{ $appointment->updated_at }}
                     </td>
+                    <td class="vert">
+                        <button type="submit" class="btn mt-3 btn-light">Edit Appointments</button>
+                        </td>
                     
                     </form>
                     
@@ -141,7 +135,7 @@
                                     
                                         
                                      
-                                            <
+                                            
                                     </tbody>
                                     
                                 </table>
