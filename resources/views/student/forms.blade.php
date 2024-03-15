@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-                <div class="container text-center">
+                <div class="container text-center mb-3">
                     <a href="/student/newappointment">
                         <button type="button" style="width: 10rem; height:3rem; border-radius:20px;" class="btn btn-dark">
                             <i class="bi bi-arrow-right"></i>Get Started

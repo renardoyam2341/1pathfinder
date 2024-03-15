@@ -69,12 +69,6 @@
                         Room
                     </th>
                     <th scope="col" class="hori">
-                        Created
-                    </th>
-                    <th scope="col" class="hori">
-                        Updated
-                    </th>
-                    <th scope="col" class="hori">
 
                     </th>
                                         </tr>
@@ -117,14 +111,8 @@
                     value="{{ $appointment->room }}">
                     </td>
                     <td class="vert">
-                        {{ $appointment->created_at }}
+                        <button type="submit" class="btn mt-3 btn-light" style="border-radius:10px;">Edit Appointment</button>
                     </td>
-                    <td class="vert">
-                        {{ $appointment->updated_at }}
-                    </td>
-                    <td class="vert">
-                        <button type="submit" class="btn mt-3 btn-light">Edit Appointments</button>
-                        </td>
                     
                     </form>
                     
