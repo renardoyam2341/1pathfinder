@@ -1,8 +1,8 @@
-       <header class="topbar" data-navbarbg="skin5">
+       <header class="topbar" style="background-color:#3AAFA9">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
                     <!-- Logo -->
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" style="background-color:#3AAFA9" href="index.php">
                         <!-- Logo icon -->
                         <b class="logo-icon d-flex justify-content-between">
                         <img src="https://i.ibb.co/nPCXSp5/uclogo.png" alt="homepage" style="height:50px; margin-right:10px;" />

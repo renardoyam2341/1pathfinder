@@ -17,9 +17,9 @@
         @include('layouts.topbar')
         @include('layouts.studentsidebar')
 
-        <div class="page-wrapper mh-100 overflow-auto">
+        <div class="page-wrapper mh-100 overflow-auto" style="background-color:#DEF2F1">
             
-            <div class="page-breadcrumb">
+            <div class="page-breadcrumb" style="background-color:#DEF2F1">
                 <div class="row align-items-center">
                     <div class="col-5">
                         <h4 class="page-title"><i class="mdi mdi-alarm-check"></i>Form Completion</h4>
@@ -42,7 +42,7 @@
             <div class="container d-flex justify-content-around align-items-center text-center">
                 <div class="row">
                     <div class="col">
-                        <div class="card text-white bg-dark align-items-center" style="width: 25rem; height:28rem; border-radius:20px;">
+                        <div class="card text-white align-items-center" style="width: 25rem; height:28rem; border-radius:20px; background-color:#17252a">
                             <img class="card-img-top" style="width:350px; height:350px;" src="https://i.ibb.co/Lt8NNQr/Pngtree-man-listen-to-hidden-information-8785847.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title">Counseling Informed Consent Form</h5>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="card text-white bg-dark align-items-center" style="width: 25rem; height:28rem; border-radius:20px;">
+                        <div class="card text-white align-items-center" style="width: 25rem; height:28rem; border-radius:20px; background-color:#17252a">
                             <img class="card-img-top" style="width:350px; height:350px;" src="https://i.ibb.co/n0bh9VZ/Lovepik-com-450070359-counselling-in-flat-illustration-vector.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title">Counseling Intake Form</h5>
@@ -66,8 +66,8 @@
 
                 <div class="container text-center mb-3">
                     <a href="/student/newappointment">
-                        <button type="button" style="width: 10rem; height:3rem; border-radius:20px;" class="btn btn-dark">
-                            <i class="bi bi-arrow-right"></i>Get Started
+                        <button type="button" style="width: 10rem; height:3rem; border-radius:20px; background-color:#2b7a78;" class="btn text-light">
+                            <strong>Get Started</strong>
                         </button>
                     </a>
                 </div>

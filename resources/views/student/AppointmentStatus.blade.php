@@ -19,9 +19,9 @@
         @include('layouts.topbar')
         @include('layouts.studentsidebar')
 
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="background-color:#DEF2F1">
 
-            <div class="page-breadcrumb">
+            <div class="page-breadcrumb" style="background-color:#DEF2F1">
                 <div class="row align-items-center">
                     <div class="col-5">
                         <h4 class="page-title"><i class="mdi mdi-calendar-multiple-check"></i> Appointment Status</h4>
