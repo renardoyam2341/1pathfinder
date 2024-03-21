@@ -17,9 +17,9 @@
         @include('layouts.topbar')
         @include('layouts.studentsidebar')
 
-        <div class="page-wrapper mh-100 overflow-auto">
+        <div class="page-wrapper mh-100 overflow-auto" style="background-color:#DEF2F1">
 
-            <div class="page-breadcrumb">
+            <div class="page-breadcrumb" style="background-color:#DEF2F1">
                 <div class="row align-items-center">
                     <div class="col-5">
                         <h4 class="page-title"><i class="mdi mdi-alarm-check"></i>Home</h4>
@@ -31,7 +31,7 @@
             <section id="welcome" class="flex-grow-1">
 
                 <div id="welcomeMessage" class="container">
-                  <div class="row text-light bg-secondary px-5 py-5" style="border-radius:30px;">
+                  <div class="row text-light px-5 py-5" style="border-radius:30px; background-color: #17252A;">
                     <div class="col-md-6 col-12 text-center">
                       <div class="d-flex align-items-center h-100">
                         <div>

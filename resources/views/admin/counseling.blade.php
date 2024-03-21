@@ -18,10 +18,10 @@
         @include('layouts.topbar')
         @include('layouts.sidebar')
 
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="background-color:#DEF2F1">
             <!-- Bread crumb and right sidebar toggle -->
             <div class="page-breadcrumb">
-                <div class="row align-items-center">
+                <div class="row align-items-center" style="background-color:#DEF2F1">
                     <div class="col-5">
                         <h4 class="page-title"><i class="mdi mdi-alarm-check"></i>Counseling</h4>
                         <div class="d-flex align-items-center">
@@ -39,7 +39,7 @@
             <div class="container d-flex justify-content-around align-items-center text-center">
                 <div class="row">
                     <div class="col">
-                        <div class="card text-white bg-dark" style="width: 25rem; height:32rem; border-radius:20px;">
+                        <div class="card text-white" style="width: 25rem; height:32rem; border-radius:20px; background-color:#17252a;">
                             <img class="card-img-top" style="width:400px; height:400px;" src="https://i.ibb.co/Bw1mX4V/transparent-interview-icon-video-conference-icon-606fd33004b335-8145544116179412960193.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title">Video Counseling</h5>
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="card text-white bg-dark" style="width: 25rem; height:32rem; border-radius:20px;">
+                        <div class="card text-white" style="width: 25rem; height:32rem; border-radius:20px; background-color:#17252a;">
                             <img class="card-img-top" style="width:400px; height:400px;" src="https://i.ibb.co/7kz9gwR/keyboard-hands-clipart-md.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title">Chat Counseling</h5>
