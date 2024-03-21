@@ -162,6 +162,7 @@
         </form>
     </div>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -171,7 +172,15 @@
         </div>
 
     </div>
+    @if(Session::has('message'))
+    <script>
+        toastr.options = {
+            "progressbar" : true,
 
+        }
+        toastr.success{"{{ Session::get('message')}}"};
+    </script>
+@endif
     @include('layouts.footer') 
 </body>
 

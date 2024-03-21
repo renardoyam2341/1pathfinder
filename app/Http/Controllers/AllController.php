@@ -98,7 +98,8 @@ class AllController extends Controller
 
         Appointment::create($validatedData);
 
-        return redirect('/')->with('success', 'Appointment created successfully.');
+        return redirect()->route('sdashboard.index')
+          ->with('message', 'Appointment created successfully.');
     }
     public function update(Request $request, $id)
     {
@@ -109,7 +110,7 @@ class AllController extends Controller
         $appointment = Appointment::find($id);
         $appointment->update($request->all());
         return redirect()->route('AppointmentList.index')
-          ->with('success', 'Appointments updated successfully.');
+          ->with('success', 'Appointment updated successfully.');
       }
 
     public function createroom(){

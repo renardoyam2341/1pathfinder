@@ -4,6 +4,17 @@
 @include('layouts.header')
 
 
+<style>
+    
+    th{
+        font-size: 150%;
+    }
+    td{
+        font-size:150%;
+    }
+</style>
+
+</script>
 <body>
     <!-- Preloader - style in spinners.css -->
     <div class="preloader">
@@ -53,7 +64,7 @@
                     <th scope="col" class="hori">
                         Mode of Counsel
                     </th>
-                    <th scope="col" class="hori">
+                    <th scope="col" class="hori" style="font-size:100%;">
                         Preferred Counselor Gender
                     </th>
                     <th scope="col" class="hori">
@@ -106,19 +117,27 @@
                     <option value="Done" {{ $appointment->status == 'Done' ? 'selected' : ''}}>Done</option>
                     </select>
                     
+                    
                     <td class="vert">
                     <input type="text" id="room" name="room"
                     value="{{ $appointment->room }}">
                     </td>
                     <td class="vert">
                         <button type="submit" class="btn mt-3 btn-light" style="border-radius:10px;">Edit Appointment</button>
+                        
                     </td>
+                    
                     
                     </form>
                     
                 </tr>
                 
                 @endforeach
+                @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
                                     
                                     
                                         
@@ -142,7 +161,7 @@
     </div>
 
     @include('layouts.footer')
-
+    
 </body>
 
 </html>

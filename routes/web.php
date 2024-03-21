@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [AllController::class, 'Sdashboard']);
+Route::get('/', [AllController::class, 'Sdashboard'])->name('sdashboard.index');
 Route::get('/admin', [AllController::class, 'Adashboard']);
 Route::get('/AppointmentList', [AllController::class, 'Alist'])->name('AppointmentList.index');
 Route::get('/student/newappointment', [AllController::class, 'newAppointment']);
@@ -29,3 +29,7 @@ Route::put('/update/{id}', [AllController::class, 'update'])->name('appointments
 Route::get('/admin/roomcreate', [AllController::class, 'createroom']);
 Route::get('/admin/dashboard', [AllController::class, 'adminD']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
