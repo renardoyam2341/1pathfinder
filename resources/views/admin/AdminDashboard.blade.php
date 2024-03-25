@@ -3,18 +3,6 @@
 
 @include('layouts.header')
 
-
-<style>
-    
-    th{
-        font-size: 150%;
-    }
-    td{
-        font-size:150%;
-    }
-</style>
-
-</script>
 <body>
     <!-- Preloader - style in spinners.css -->
     <div class="preloader">
