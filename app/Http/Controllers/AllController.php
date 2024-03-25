@@ -120,4 +120,9 @@ class AllController extends Controller
     public function adminD(){
         return view('admin.dashboardA');
     }
+
+    public function login(){
+        return view('auth.login');
+    }
+
 }
